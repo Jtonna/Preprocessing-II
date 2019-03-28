@@ -184,10 +184,10 @@ img {
 .navagation a {
   padding: 0 1.75rem 0;
   text-decoration: none;
-  color: black;
+  color: #212529;
 }
 .navagation a:hover {
-  color: lightseagreen;
+  color: #17A2B8;
 }
 .footer {
   width: 100%;
