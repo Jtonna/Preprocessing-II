@@ -6,22 +6,23 @@
     Justify-content: space-between;
     border-bottom: 2px dashed grey;
 
-    @media (max-width: 500px) {
+    @media @tablet {
         flex-direction: column;
     }
 
     .logo {
         font-weight: bold;
+
         // adds 5px of padding to more closely match the layout
-        @media(max-width: 500px)
-        {
+        @media @tablet {
             padding: 0 0 .5rem;
         }
+
         a {
             h1 {
 
                 // nested 4 deep, you shall go no further.
-                @media (max-width: 500px) {
+                @media @tablet {
                     font-size: 3rem;
                 }
             }
@@ -37,7 +38,7 @@
         text-decoration: none;
         color: @shark;
 
-        @media (max-width: 500px) {
+        @media @tablet {
             padding: 0 3rem 0;
         }
 
