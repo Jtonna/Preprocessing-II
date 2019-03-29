@@ -175,8 +175,23 @@ img {
   Justify-content: space-between;
   border-bottom: 2px dashed grey;
 }
+@media (max-width: 500px) {
+  .navagation {
+    flex-direction: column;
+  }
+}
 .navagation .logo {
   font-weight: bold;
+}
+@media (max-width: 500px) {
+  .navagation .logo {
+    padding: 0 0 0.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .navagation .logo a h1 {
+    font-size: 3rem;
+  }
 }
 .navagation .nav {
   font-size: 1.5rem;
@@ -185,6 +200,11 @@ img {
   padding: 0 1.75rem 0;
   text-decoration: none;
   color: #212529;
+}
+@media (max-width: 500px) {
+  .navagation a {
+    padding: 0 3rem 0;
+  }
 }
 .navagation a:hover {
   color: #17A2B8;
