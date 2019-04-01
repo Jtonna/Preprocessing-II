@@ -1,1 +1,17 @@
 // Mixins in here
+.custom-button(@borderR, @bgC: seagreen, @fontSize){
+    //general style
+    border-radius: @borderR;
+    background-color: @bgC;
+    font-size: @fontSize;
+    color: white;
+    text-align: center;
+    padding: 1rem 3rem 1rem;
+    width: 20rem;
+    // the fact this works blows my mind.
+    // PLEASE tell me if i shouldnt be using this format
+    //it feels like a cheat
+    @media @tablet{
+        width: 80%;
+    }
+}

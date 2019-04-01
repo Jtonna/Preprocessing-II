@@ -1,1 +1,49 @@
 // Navigation Styles here
+.navagation {
+    padding: 1.5rem 0 1.5rem;
+    display: flex;
+    align-items: center;
+    Justify-content: space-between;
+    border-bottom: 2px dashed grey;
+
+    @media @tablet {
+        flex-direction: column;
+    }
+
+    .logo {
+        font-weight: bold;
+
+        // adds 5px of padding to more closely match the layout
+        @media @tablet {
+            padding: 0 0 .5rem;
+        }
+
+        a {
+            h1 {
+
+                // nested 4 deep, you shall go no further.
+                @media @tablet {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+
+    .nav {
+        font-size: 1.5rem;
+    }
+
+    a {
+        padding: 0 1.75rem 0;
+        text-decoration: none;
+        color: @shark;
+
+        @media @tablet {
+            padding: 0 3rem 0;
+        }
+
+        &:hover {
+            color: @eastern-blue;
+        }
+    }
+}
